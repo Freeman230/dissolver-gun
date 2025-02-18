@@ -40,6 +40,7 @@ SWEP.AutoSwitchTo = true
 SWEP.AutoSwitchFrom = true
 
 function SWEP:Initialize()
+	self:SetNWInt("Mode", 1)
     self:SetWeaponHoldType("smg")
 end
 
@@ -129,5 +130,4 @@ function SWEP:PrimaryAttack()
     end
 end
 
-function SWEP:SecondaryAttack()
-end
+function SWEP:SecondaryAttack() end
